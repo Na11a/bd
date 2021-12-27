@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/symonenko</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">170280xz</property>
+        <mapping class="symonenko.model.City"/>
+        <mapping class="symonenko.model.Country"/>
+        <mapping class="symonenko.model.CurrentInfo"/>
+        <mapping class="symonenko.model.Owner"/>
+        <mapping class="symonenko.model.OwnerHasStantion"/>
+        <mapping class="symonenko.model.Sale"/>
+        <mapping class="symonenko.model.SolarPanel"/>
+        <mapping class="symonenko.model.Station"/>
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
