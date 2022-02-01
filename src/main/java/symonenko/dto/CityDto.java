@@ -2,6 +2,7 @@ package symonenko.dto;
 
 import lombok.*;
 
+import java.io.Serializable;
 import java.util.List;
 
 @AllArgsConstructor
@@ -9,7 +10,7 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class CityDto {
+public class CityDto implements Serializable {
     private Integer id;
     private String name;
     private Integer countryId;

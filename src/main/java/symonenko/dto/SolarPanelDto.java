@@ -1,6 +1,7 @@
 package symonenko.dto;
 import lombok.*;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
 
@@ -9,7 +10,7 @@ import java.util.Set;
 @Getter
 @Setter
 @ToString
-public class SolarPanelDto {
+public class SolarPanelDto implements Serializable {
     private Integer id;
     private Integer power;
     private Integer capacity;

@@ -1,6 +1,7 @@
 package symonenko.dto;
 import lombok.*;
 
+import java.io.Serializable;
 
 
 @AllArgsConstructor
@@ -8,7 +9,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class OwnerHasStantionDto {
+public class OwnerHasStantionDto implements Serializable {
     private Integer ownerId;
     private Integer stationId;
 }

@@ -1,6 +1,7 @@
 package symonenko.dto;
 import lombok.*;
 
+import java.io.Serializable;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class CurrentInfoDto {
+public class CurrentInfoDto implements Serializable {
     private Integer id;
     private Double charge;
     private Double angle;
