@@ -1,14 +1,11 @@
 package symonenko.service;
-import java.io.Serializable;
-import java.util.*;
-public interface AbstractService<T, K extends Serializable> {
-    List<T> findAll();
 
-    T findById(K id);
+import java.util.List;
 
-    T create(T entity);
-
-    T update(K id, T entity);
-
-    void delete(T entity);
+public interface AbstractService<T> {
+    T getElementById(Integer id);
+    List<T> getAllElements();
+    T createElement(T element);
+    T updateElement(T element);
+    void deleteElement(Integer id);
 }
